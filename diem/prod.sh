@@ -1,9 +1,9 @@
 # Deploy wrapper for go-deploy.sh
 #
 if [ -f ./settings/$1 ]; then
-	file=$1
+	file="$1.sh"
 else
-	file="main"
+	file="main.sh"
 fi
 
 tag_count=$2
