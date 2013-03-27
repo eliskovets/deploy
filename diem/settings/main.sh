@@ -13,7 +13,7 @@ owner=prod_user_name
 svn_path="$svn_path$tag"
 
 # TEST ENV (uncomment code below for test on local or test env)
-site_path="/path/to/your/local|test/project/folder/"
-svn_path="svn://svn.your-svn-server.com/your-svn-repo"
-owner=local_user_name
-owner=local_user_name
+# site_path="/path/to/your/local|test/project/folder/"
+# svn_path="svn://svn.your-svn-server.com/your-svn-repo"
+# owner=local_user_name
+# owner=local_user_name
