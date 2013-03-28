@@ -5,9 +5,10 @@ date +%Y-%m-%d_%H:%M
 echo ;
 
 echo "1) Get last tag."
-file=$1
-tag_count=$2
-source ./settings/$file
+project=$1
+file=$2
+tag_count=$3
+source ./settings/$project/$file
 echo $tag
 
 echo "2) Check if directory exists and go there."
@@ -32,12 +33,8 @@ fi
 
 svn up
 
-echo "4) Fix permissions for cache and log folders"
-chmod 777 -R cache log
-
-echo "5) Setup diem"
-php symfony dm:setup
-
+echo "4) Set permissions for assets and runtime dirs"
+chmod 777 -R assets protected/runtime
 
 # Delimiter
 echo ;
