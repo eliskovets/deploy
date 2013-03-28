@@ -3,6 +3,17 @@
 
 ##Description:
 Deployment application allows you easy deploy different type of application on many servers via SVN.
+Allow you autodeploy your application by choosing tag release via setting number of release (from last one).
+###Examples:
+  * Go to last release:
+  ```bash
+  ./prod.sh diem main 1
+  ```
+
+  * Go to previous release (release before last - rollback from last release):
+  ```bash
+  ./prod.sh diem main 2
+  ```
 
 
 ##How to use:
