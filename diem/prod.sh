@@ -1,5 +1,6 @@
-# Deploy wrapper for go-deploy.sh
-#
+#!/bin/bash
+
+# Deploy wrapper for update-from-tag.sh script
 if [ -f ./settings/$1 ]; then
 	file="$1.sh"
 else
