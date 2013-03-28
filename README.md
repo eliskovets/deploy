@@ -1,7 +1,11 @@
 #Deploy scripts
 ======
 
-How to use:
+##Description:
+Deployment application allows you easy deploy different type of application on many servers via SVN.
+
+
+##How to use:
 
 1. Copy repo to your server
 2. Fill settings data in ./scripts/{project_type}/main.sh file or create your own settings file.
